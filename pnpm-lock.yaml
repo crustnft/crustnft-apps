@@ -90,6 +90,7 @@ importers:
       '@types/node': ^16.18.12
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
+      '@types/testing-library__jest-dom': ^5.14.5
       babel-plugin-named-exports-order: ^0.0.2
       prop-types: ^15.8.1
       react: ^18.2.0
@@ -124,6 +125,7 @@ importers:
       '@storybook/preset-create-react-app': 4.1.2_o2hn3cyzpoa3cxhlxvl6e2vpoq
       '@storybook/react': 6.5.16_qmmwwzoo44lsd3y6jmua5ic44e
       '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
+      '@types/testing-library__jest-dom': 5.14.5
       babel-plugin-named-exports-order: 0.0.2
       prop-types: 15.8.1
       tsconfig: link:../../tsconfig
@@ -5383,7 +5385,6 @@ packages:
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
-    dev: false
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
@@ -5529,7 +5530,6 @@ packages:
     resolution: {integrity: sha512-SBwbxYoyPIvxHbeHxTZX2Pe/74F/tX2/D3mMvzabdeJ25bBojfW0TyB8BHrbq/9zaaKICJZjLP+8r6AeZMFCuQ==}
     dependencies:
       '@types/jest': 27.5.2
-    dev: false
 
   /@types/trusted-types/2.0.3:
     resolution: {integrity: sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==}
@@ -7047,7 +7047,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -14072,6 +14072,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dev: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.6:
