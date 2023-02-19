@@ -11,7 +11,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "start": "turbo run start"
+    "start": "turbo run start",
+    "storybook": "turbo run storybook"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
