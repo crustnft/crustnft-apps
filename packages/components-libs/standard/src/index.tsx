@@ -1,3 +1,5 @@
 import { Button } from "./components/button";
 
-export { Button };
+import ThemeProvider from "./theme";
+
+export { Button, ThemeProvider };
